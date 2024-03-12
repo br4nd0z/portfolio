@@ -1,0 +1,134 @@
+:root {
+  --primary-color: rgb(0, 255, 0);
+  --icon-color: rgb(0, 0, 0);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: grid;
+  grid-template-areas: 'content';
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
+  background-color: #000;
+  margin: 0;
+}
+
+main {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  grid-area: content;
+  z-index: 777;
+  max-width: 1200px;
+  width: 100%;
+  place-self: start center;
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section {
+  height: 100vh;
+}
+
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: #0005;
+  grid-area: content;
+  place-self: end center;
+  display: grid;
+  place-content: center;
+  border-top: 2px solid white;
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 24px; /* Ajuste para espaçamento menor no topo */
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .logo::before,
+  .logo::after {
+    display: none;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .sobre-mim {
+    grid-template-areas:
+      'tittle'
+      'description'
+      'skills';
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: 1fr;
+    gap: 16px; /* Redução do espaçamento entre as seções */
+  }
+
+  .description__tittle,
+  .skills__tittle,
+  .section__tittle {
+    font-size: 24px; /* Tamanhos de fonte reduzidos */
+  }
+
+  .description__text {
+    width: 100%;
+  }
+
+  .card-container {
+    flex-direction: column;
+    gap: 16px; /* Redução do espaçamento entre os cards */
+  }
+
+  .card::before {
+    content: 'Toque para abrir o projeto'; /* Texto mais amigável para dispositivos móveis */
+  }
+
+  .profile {
+    flex-direction: column;
+    gap: 16px; /* Redução do espaçamento entre os elementos */
+    text-align: center;
+  }
+
+  .profile__text,
+  .profile__name {
+    font-size: 1.5rem; /* Tamanho de fonte reduzido */
+  }
+
+  .contatos {
+    grid-template-areas:
+      'tittle'
+      'contato'
+      'social'
+      'link';
+    grid-template-rows: auto auto 1fr 1fr;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 16px; /* Redução do espaçamento entre as seções */
+  }
+
+  .contato-container h3,
+  .link-container h3 {
+    font-size: 1rem; /* Tamanho de fonte reduzido */
+  }
+}
