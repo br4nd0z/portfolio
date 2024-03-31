@@ -8,8 +8,6 @@ html {
 }
 
 body {
-  display: grid;
-  grid-template-areas: 'content';
   font-family: 'Ubuntu', sans-serif;
   color: #fff;
   background-color: #000;
@@ -17,19 +15,16 @@ body {
 }
 
 main {
-  grid-area: content;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 header {
-  grid-area: content;
   z-index: 777;
-  max-width: 1200px;
+  max-width: 90%; /* Adjusted max-width for smaller screens */
   width: 100%;
-  place-self: start center;
-  margin-top: 48px;
+  margin-top: 24px; /* Adjusted margin-top for smaller screens */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,8 +38,6 @@ footer {
   height: 50px;
   width: 100%;
   background-color: #0005;
-  grid-area: content;
-  place-self: end center;
   display: grid;
   place-content: center;
   border-top: 2px solid white;
@@ -56,7 +49,6 @@ footer {
   header {
     flex-direction: column;
     text-align: center;
-    margin-top: 24px; /* Ajuste para espaçamento menor no topo */
   }
 
   .menu {
@@ -82,13 +74,13 @@ footer {
       'skills';
     grid-template-rows: auto auto 1fr;
     grid-template-columns: 1fr;
-    gap: 16px; /* Redução do espaçamento entre as seções */
+    gap: 16px;
   }
 
   .description__tittle,
   .skills__tittle,
   .section__tittle {
-    font-size: 24px; /* Tamanhos de fonte reduzidos */
+    font-size: 24px;
   }
 
   .description__text {
@@ -97,22 +89,22 @@ footer {
 
   .card-container {
     flex-direction: column;
-    gap: 16px; /* Redução do espaçamento entre os cards */
+    gap: 16px;
   }
 
   .card::before {
-    content: 'Toque para abrir o projeto'; /* Texto mais amigável para dispositivos móveis */
+    content: 'Tap to open project';
   }
 
   .profile {
     flex-direction: column;
-    gap: 16px; /* Redução do espaçamento entre os elementos */
+    gap: 16px;
     text-align: center;
   }
 
   .profile__text,
   .profile__name {
-    font-size: 1.5rem; /* Tamanho de fonte reduzido */
+    font-size: 1.5rem;
   }
 
   .contatos {
@@ -124,11 +116,11 @@ footer {
     grid-template-rows: auto auto 1fr 1fr;
     grid-template-columns: 1fr;
     align-items: center;
-    gap: 16px; /* Redução do espaçamento entre as seções */
+    gap: 16px;
   }
 
   .contato-container h3,
   .link-container h3 {
-    font-size: 1rem; /* Tamanho de fonte reduzido */
+    font-size: 1rem;
   }
 }
