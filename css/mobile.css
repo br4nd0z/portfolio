@@ -1,67 +1,98 @@
 @media (max-width: 640px) {
-  body {
-    width: 100%;
-  }
+    body {
+        width: 100%;
+        flex-direction: column;
+    }
 
-  header {
-    max-width: 400px;
-    width: 100%;
-  }
+    header {
+        max-width: 400px;
+        width: 100%;
+    }
 
-  .home {
-    position: relative;
-    flex-direction: column;
-    width: 100%;
-    height: 1000px;
-  }
+    nav {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
 
-  .profile__text {
-    font-size: 2rem;
-  }
+    .logo {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
 
-  .section__tittle {
-    font-size: 4.5rem;
-  }
+    .menu {
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
 
-  .description__tittle {
-    font-size: 3.5rem;
-  }
+    .home {
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        height: 1000px;
+    }
 
-  .skills__tittle {
-    font-size: 3.5rem;
-  }
+    .profile__text {
+        font-size: 2rem;
+        flex-direction: column;
+    }
 
-  .sobre-mim {
-    height: 2100px;
-    display: flex;
-    align-items: center;
-    gap: 124px;
-  }
+    .section__tittle {
+        font-size: 4.5rem;
+        flex-direction: column;
+    }
 
-  .skills__container {
-    justify-content: center;
-  }
+    .description__tittle {
+        font-size: 3.5rem;
+        flex-direction: column;
+    }
 
-  .card-container{
-    display: flex;
-    justify-content: center;
+    .skills__tittle {
+        font-size: 3.5rem;
+        flex-direction: column;
+    }
 
-  }
+    .sobre-mim {
+        height: 2100px;
+        display: flex;
+        align-items: center;
+        gap: 124px;
+        flex-direction: column;
+    }
 
-  .card-container img {
-    width: 350px;
-  }
+    .skills__container {
+        justify-content: center;
+        flex-direction: column;
+    }
 
-  h2 {
-    display: flex;
-    justify-content: center;
-  }
+    .card-container {
+        display: flex;
+        justify-content: center;
 
-  .contatos {
-    height: 900px;
-  }
+    }
 
-  .social-container {
-    flex-direction: column;
-  }
+    .card-container img {
+        width: 350px;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contatos {
+        height: 900px;
+        position: relative;
+        flex-direction: column;
+    }
+
+    .social-container {
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+    }
 }
