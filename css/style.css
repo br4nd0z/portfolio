@@ -1,7 +1,7 @@
 /* Importação da fonte Wolves */
 @font-face {
   font-family: 'Wolves';
-  src: url('Wolves.ttf') format('truetype');
+  src: url('./Wolves.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
