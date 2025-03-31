@@ -1,19 +1,18 @@
-/* Importação da fonte Wolves (necessária se mobile.css for independente) */
 @font-face {
   font-family: 'Wolves';
-  src: url('./Wolves.ttf') format('truetype');
+  src: url('Wolves.woff2') format('woff2'),
+       url('Wolves.woff') format('woff'),
+       url('Wolves.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @media (max-width: 640px) {
-  /* Geral */
   body {
     font-family: 'Wolves', sans-serif;
     width: 100%;
   }
 
-  /* Header */
   header {
     max-width: 100%;
     padding: 0 16px;
@@ -34,14 +33,13 @@
   }
 
   .navigation-icon {
-    display: block; /* Visível em mobile */
+    display: block;
     font-size: 1.5rem;
   }
 
-  /* Home */
   .home {
     flex-direction: column;
-    min-height: 80vh; /* Reduzido para caber melhor em mobile */
+    min-height: 80vh;
     padding: 16px;
   }
 
@@ -54,8 +52,8 @@
   .profile__foto {
     width: 150px;
     height: 150px;
-    object-fit: cover; /* Para imagens quadradas */
-    border-radius: 50%; /* Opcional: foto circular */
+    object-fit: cover;
+    border-radius: 50%;
   }
 
   .profile__name {
@@ -66,7 +64,6 @@
     font-size: 1.25rem;
   }
 
-  /* Sobre Mim */
   .sobre-mim {
     height: auto;
     padding: 16px;
@@ -111,7 +108,6 @@
     font-size: 1.25rem;
   }
 
-  /* Contatos */
   .contatos {
     height: auto;
     padding: 16px;
@@ -141,7 +137,6 @@
     font-size: 1.25rem;
   }
 
-  /* Footer */
   footer {
     font-size: 0.65rem;
     padding: 8px;
