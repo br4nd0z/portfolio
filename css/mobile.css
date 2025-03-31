@@ -1,8 +1,15 @@
+@font-face {
+  font-family: 'Wolves';
+  src: url('wolves.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @media (max-width: 640px) {
     body {
         width: 100%;
-    }
-  
+        font-family: 'Wolves', sans-serif;
+
     header {
         max-width: 400px;
         width: 100%;
@@ -15,11 +22,13 @@
         justify-content: center;
         align-items: center;
         gap: 24px;
+        font-family: 'Wolves', sans-serif;
     }
 
     .logo {
         width: 100%;
         text-align: center;
+        font-family: 'Wolves', sans-serif;
     }
 
     .home {
@@ -30,18 +39,22 @@
 
     .profile__text {
         font-size: 2rem;
+        font-family: 'Wolves', sans-serif; /* Aplicando a fonte ao texto do perfil */
     }
 
     .section__tittle {
         font-size: 4.5rem;
+        font-family: 'Wolves', sans-serif; /* Aplicando a fonte ao título da seção */
     }
 
     .description__tittle {
         font-size: 3.5rem;
+        font-family: 'Wolves', sans-serif; /* Aplicando a fonte ao título da descrição */
     }
 
     .skills__tittle {
         font-size: 3.5rem;
+        font-family: 'Wolves', sans-serif; /* Aplicando a fonte ao título das skills */
     }
 
     .sobre-mim {
@@ -72,6 +85,7 @@
     h2 {
         display: flex;
         justify-content: center;
+        font-family: 'Wolves', sans-serif; /* Aplicando a fonte ao h2 */
     }
 
     .contatos {
