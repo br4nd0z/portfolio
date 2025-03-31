@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'NomeDaFonte'; /* Substitua por um nome que você quer usar */
+  src: url('Wolves.ttf') format('truetype'); /* Substitua pelo nome real do arquivo TTF */
+  font-weight: normal; /* Ajuste conforme necessário */
+  font-style: normal; /* Ajuste conforme necessário */
+}
 :root {
   --primary-color: rgb(0, 255, 0);;
   --icon-color: rgb(0, 0, 0);;
