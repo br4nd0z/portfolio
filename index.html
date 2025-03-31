@@ -1,102 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>br4nd0z</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <script src="https://kit.fontawesome.com/0efc108669.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/mobile.css">
 </head>
-
 <body>
   <header>
     <div class="logo">br4nd0z</div>
-    <a href="#">
-      <i class="fas fa-bars navigation-icon"></i>
-    </a>
     <nav>
       <ul class="menu">
-        <li>
-          <a href="#home">Home</a>
-        </li>
-        <li>
-          <a href="#sobre-mim">Sobre mim</a>
-        </li>
-        <li>
-          <a href="#contato">Contato</a>
-        </li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre-mim">Sobre mim</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
+      <a href="#" class="navigation-icon"><i class="fas fa-bars"></i></a>
     </nav>
   </header>
+
   <main>
     <section class="home" id="home">
       <div class="profile">
-        <img class="profile__foto" src="" alt="" />
+        <img class="profile__foto" src="./img/profile.jpg" alt="Foto de Eduardo Brandão" />
         <div>
           <span class="profile__text">Olá, meu nome é</span>
           <h1 class="profile__name">Eduardo Brandão</h1>
-          <span class="profile__text">tenho 20 anos</span>
-          <span class="profile__text"></span>
+          <span class="profile__text">Tenho 20 anos</span>
         </div>
       </div>
     </section>
+
     <section class="sobre-mim" id="sobre-mim">
       <h2 class="section__tittle">Sobre Mim</h2>
       <div class="description">
         <h3 class="description__tittle">Interesses:</h3>
         <p class="description__text">
-        Back-End<br>
-        Desenvolvimento de SaaS<br>
-        Segurança da Informação
+          Back-End<br>
+          Desenvolvimento de SaaS<br>
+          Segurança da Informação
         </p>
       </div>
-        
       <div class="skills">
         <h3 class="skills__tittle">Skills:</h3>
         <ul class="skills__container">
           <li class="skills__icon">
             <i class="fa-brands fa-java"></i>
-            <span>JAVA</span>
+            <span>Java</span>
           </li>
           <li class="skills__icon">
             <i class="fa-brands fa-python"></i>
-            <span>PYTHON</span>
+            <span>Python</span>
           </li>
           <li class="skills__icon">
             <i class="fa-solid fa-database"></i>
-            <span>DATABASE</span>
+            <span>Database</span>
           </li>
         </ul>
       </div>
     </section>
 
-
-    <br><br><br>
-
     <section class="contatos" id="contato">
       <h2 class="section__tittle">Contatos</h2>
+      <div class="contato-container">
+        <h3>Entre em contato:</h3>
+        <div class="contato-item">
+          <i class="fa-solid fa-envelope contato-item__icon"></i>
+          <span>xeduardobrandao@gmail.com</span>
+        </div>
+        <div class="contato-item">
+          <i class="fa-brands fa-whatsapp contato-item__icon"></i>
+          <span>+55 21 99261-6193</span>
+        </div>
+      </div>
       <ul class="social-container">
         <li class="social">
-          <a href="https://github.com/br4nd0z" target="_blank"> <i class="fab fa-github"></i></a>
+          <a href="https://github.com/br4nd0z" target="_blank"><i class="fab fa-github"></i></a>
         </li>
         <li class="social">
           <a href="https://wa.me/5521992616193" target="_blank"><i class="fab fa-whatsapp"></i></a>
         </li>
         <li class="social">
-          <a href="mailto:xeduardobrandao@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+          <a href="mailto:xeduardobrandao@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
         </li>
         <li class="social">
           <a href="https://www.instagram.com/brandaorxt/" target="_blank"><i class="fab fa-instagram"></i></a>
         </li>
       </ul>
-
+      <div class="link-container">
+        <h3>Links úteis:</h3>
+        <a href="#">Portfolio</a>
+        <a href="#">Projetos</a>
+      </div>
     </section>
   </main>
 
+  <footer>
+    <span>&copy; 2025 Eduardo Brandão</span>
+  </footer>
 </body>
-
 </html>
