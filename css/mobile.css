@@ -1,3 +1,4 @@
+/* Importação da fonte Wolves (necessária se mobile.css for independente) */
 @font-face {
   font-family: 'Wolves';
   src: url('Wolves.ttf') format('truetype');
@@ -6,102 +7,143 @@
 }
 
 @media (max-width: 640px) {
+  /* Geral */
   body {
-    width: 100%;
     font-family: 'Wolves', sans-serif;
+    width: 100%;
+  }
 
-    header {
-      max-width: 400px;
-      width: 100%;
-      padding: 0 16px;
-    }
+  /* Header */
+  header {
+    max-width: 100%;
+    padding: 0 16px;
+    flex-direction: column;
+    margin-top: 24px;
+  }
 
-    .menu {
-      width: 100%;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 24px;
-      font-family: 'Wolves', sans-serif;
-    }
+  .logo {
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+  }
 
-    .logo {
-      width: 100%;
-      text-align: center;
-      font-family: 'Wolves', sans-serif;
-    }
+  .menu {
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    text-align: center;
+  }
 
-    .home {
-      width: 100%;
-      flex-direction: column;
-      min-height: 100vh;
-    }
+  .navigation-icon {
+    display: block; /* Visível em mobile */
+    font-size: 1.5rem;
+  }
 
-    .profile__text {
-      font-size: 2rem;
-      font-family: 'Wolves', sans-serif;
-    }
+  /* Home */
+  .home {
+    flex-direction: column;
+    min-height: 80vh; /* Reduzido para caber melhor em mobile */
+    padding: 16px;
+  }
 
-    .section__tittle {
-      font-size: 4.5rem;
-      font-family: 'Wolves', sans-serif;
-    }
+  .profile {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
 
-    .description__tittle {
-      font-size: 3.5rem;
-      font-family: 'Wolves', sans-serif;
-    }
+  .profile__foto {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Para imagens quadradas */
+    border-radius: 50%; /* Opcional: foto circular */
+  }
 
-    .skills__tittle {
-      font-size: 3.5rem;
-      font-family: 'Wolves', sans-serif;
-    }
+  .profile__name {
+    font-size: 2.5rem;
+  }
 
-    .sobre-mim {
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 64px;
-    }
+  .profile__text {
+    font-size: 1.25rem;
+  }
 
-    .skills__container {
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
+  /* Sobre Mim */
+  .sobre-mim {
+    height: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
 
-    .card-container {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-    }
+  .section__tittle {
+    font-size: 4.5rem;
+  }
 
-    .card-container img {
-      width: 350px;
-    }
+  .description__tittle {
+    font-size: 2.5rem;
+  }
 
-    h2 {
-      display: flex;
-      justify-content: center;
-      font-family: 'Wolves', sans-serif;
+  .description__text {
+    font-size: 1.25rem;
+    width: 100%;
+  }
 
-      .contatos {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 32px;
-      }
+  .skills__tittle {
+    font-size: 2.5rem;
+  }
 
-      .social-container {
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-        gap: 16px;
-      }
-    }
+  .skills__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .skills__icon {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skills__icon i {
+    font-size: 2.5rem;
+  }
+
+  .skills__icon span {
+    font-size: 1.25rem;
+  }
+
+  /* Contatos */
+  .contatos {
+    height: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .social-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .social {
+    width: 48px;
+    height: 48px;
+    font-size: 1.5rem;
+  }
+
+  .link-container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .link-container h3 {
+    font-size: 1.25rem;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.65rem;
+    padding: 8px;
   }
 }
